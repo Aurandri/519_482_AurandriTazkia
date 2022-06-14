@@ -12,7 +12,6 @@
   <body>
       <div class="container-fluid">
         <div class="row justify-content-center">
-          @include('sweetalert::alert')
             <div class="col-lg-4">
                 <div class="card mt-5">
                     <div class="card-header">

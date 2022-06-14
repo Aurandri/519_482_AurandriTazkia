@@ -19,7 +19,7 @@ class AuthController extends Controller
             'email' => $req-> email,
             'password' => bcrypt($req-> password)
         ]);
-        Alert::success('Data berhasil terdaftar','Silahkan masuk');
+        
         return redirect('/');
     }
 
@@ -33,12 +33,12 @@ class AuthController extends Controller
             'email' => $req->email,
             'password' => $req->password
         ])){
-            alert()->error('GAGAL','Email atau Password Salah');
+            
             return redirect('/');
         }
         else{
             $blog = DB::table('users')->where('email', $req->email)->first();
-            Alert::success('Berhasil Masuk',  'Selamat Datang '.$blog->nama);
+                    
             
             return redirect('/home');
         }

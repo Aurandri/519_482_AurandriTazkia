@@ -9,7 +9,6 @@
 <!-- isi bagian konten -->
 <!-- cara penulisan isi section yang panjang -->
 @section('konten')
-@include('sweetalert::alert')
 <div class="tab-content" id="v-pills-tabContent">
     <div class="jumbotron">
         <h1 class="display-4">Selamat Datang </h1>

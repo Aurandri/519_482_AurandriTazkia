@@ -21,5 +21,7 @@ class BlogController extends Controller
         $users = DB::table('users')->paginate(10);
         
 		return view('mahasiswa', ['users' => $users]);
+		// $result = json_decode($users, true);
+
 	}
 }
