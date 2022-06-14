@@ -12,9 +12,10 @@
   <body>
     <div class="container-fluid">
         <div class="row">
-            <div class="col-lg-12 py-2 nav navbar bg-info d-block">
+            <div class="col-lg-12 py-2 navbar navbar-primary bg-primary d-block">
+              <span class="navbar-brand mb-0 h1" style="color: #FFFFFF">Aurandri Tazkia Bagaskara</span>
                 <div class="btn-group float-right d-block">
-                    <button type="button" class="btn btn-info dropdown-toggle " data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <button type="button" class="btn btn-primary dropdown-toggle " data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                       User
                     </button>
                     <div class="dropdown-menu dropdown-menu-right">
@@ -26,13 +27,14 @@
             </div>
         </div>
         @include('sweetalert::alert')
-        <div class="row ml-2">
+        <div class="row ml-2" style="height: 40rem;">
             <div class="col-3 mt-4 py-3 h-100 d-inline-block border">
                 <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
                     <a class="nav-link {{request()->is('home') ? 'active':''}}" href="/home">Home</a>
                     <a class="nav-link {{request()->is('mahasiswa') ? 'active':''}}" href="/mahasiswa">Data Mahasiswa</a>
                     <a class="nav-link {{request()->is('tentang') ? 'active':''}}" href="/tentang">Tentang</a>
                 </div>
+                <hr>
             </div>
             <div class="col-9 mt-4">
                 
